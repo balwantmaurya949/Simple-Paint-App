@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Paint App</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin-top: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #container {
+            text-align: center;
+            position: relative;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        canvas {
+            border: 1px solid black;
+        }
+
+        #buttons {
+            display: flex;
+            justify-content: flex-end;
+            width: 100%;
+            margin-top: 10px;
+            padding-right: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <h1>Simple Paint App</h1>
+        <canvas id="paintCanvas" width="800" height="450"></canvas>
+
+        <div id="buttons">
+                <button id="resetButton">Reset</button>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
